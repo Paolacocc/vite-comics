@@ -8,7 +8,7 @@ export default {
     appMain,
     AppFooter
   },
-  data () {
+  data() {
     return {
 
     }
@@ -17,9 +17,11 @@ export default {
 </script>
 
 <template>
-  <appHeader />
-  <appMain />
-  <AppFooter />
+  
+    <appHeader />
+    <appMain />
+    <AppFooter />
+  
 </template>
 
 <style lang="scss">
