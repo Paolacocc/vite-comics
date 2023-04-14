@@ -36,10 +36,11 @@ export default {
 }
 
 .footer-bottom {
-    height: 150px;
+    
     background-color: $footer-color;
 
     .container {
+        height: 150px;
         @include flex (row, space-between, center);
         .footer-btn {
             padding: 20px;
