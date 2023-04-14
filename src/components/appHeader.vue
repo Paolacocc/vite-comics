@@ -75,6 +75,7 @@ export default {
 
 .header {
     @include flex(row, space-between, center);
+    height: 150px;
     
     background-color: white;
 
@@ -88,14 +89,16 @@ export default {
         .list {
             list-style: none;
             margin-right: 10px;
-
+            
             a {
+                height: 150px;
                 text-decoration: none;
                 color: black;
             }
             &.active {
 
                 a {
+                    
                     color: $primary-color;
                     border-bottom: 3px solid $primary-color;
                 }

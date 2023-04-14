@@ -1,16 +1,30 @@
 <script>
+import { stringifyExpression } from '@vue/compiler-core';
+
 export default {
-    name: "appMain"
+    name: "appMain",
+
+    props: {
+        image: String,
+        price: String,
+        series: String,
+        type: String
+
+    }
 }
 </script>
 
 <template>
-   
-        
     <div class="main">
         <div class="container">
-   <h4>-->Content goes here &lt--</h4> 
-    </div>
+            <img :src="image" alt="">
+            <div class="bottom-card">
+                <div class="name">{{ series }}</div>
+                <div class="price">{{ price }}</div>
+            </div>
+
+
+        </div>
     </div>
 </template>
 
@@ -25,4 +39,4 @@ export default {
         line-height: 200px;
     }
 }
- </style>
+</style>
