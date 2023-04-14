@@ -17,10 +17,12 @@ export default {
 <template>
     <div class="main">
         <div class="container">
-            <img :src="image" alt="">
-            <div class="bottom-card">
-                <div class="name">{{ series }}</div>
-                <div class="price">{{ price }}</div>
+            <div class="card">
+                <img :src="image" alt="">
+                <div class="bottom-card">
+                    <div class="name">{{ series }}</div>
+                    <div class="price">{{ price }}</div>
+                </div>
             </div>
 
 
@@ -29,14 +31,13 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use "../style/partials/mixins" as *;
 .main {
     background-color: black;
     height: 200px;
 
-    h4 {
-        font-size: 2rem;
-        color: white;
-        line-height: 200px;
+    .card{
+        width: calc(100% / 6 - 10px);
     }
 }
 </style>
